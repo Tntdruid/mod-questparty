@@ -1,0 +1,6 @@
+[worldserver]
+
+# QuestParty.Enable
+#     Giver gruppemedlemmer personlig adgang til quest-items fra samme lootkilde.
+#     Default: 1
+QuestParty.Enable = 1
