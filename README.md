@@ -14,6 +14,8 @@ The feature is enabled by default. Set the following option in the worldserver c
 QuestParty.Enable = 0
 ```
 
+To troubleshoot quest loot, set `QuestParty.Debug = 1`. The module then writes what happens on every open and loot of a game object to the `module` log (console and `Server.log` by default).
+
 The distributed configuration template is `conf/mod_questparty.conf.dist`.
 
 ## Installation

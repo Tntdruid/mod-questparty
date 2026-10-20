@@ -5,3 +5,10 @@
 #     Default:     1 - (Enabled)
 #                  0 - (Disabled)
 QuestParty.Enable = 1
+
+# QuestParty.Debug
+#     Description: Writes detailed quest loot information to the "module" log
+#                  whenever a grouped player opens or loots a game object.
+#     Default:     0 - (Disabled)
+#                  1 - (Enabled)
+QuestParty.Debug = 0
