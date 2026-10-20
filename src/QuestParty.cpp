@@ -90,7 +90,8 @@ public:
             LootItem& item = loot->quest_items[i];
 
             QP_DEBUG("  quest item {} (slot {}): freeforall {}, looted {}, blocked {}, followLootRules {}, rollWinner {}, allowedLooters {}",
-                item.itemid, i, item.freeforall, item.is_looted, item.is_blocked, item.follow_loot_rules,
+                // LootItem flags are bit-fields, which cannot be passed by reference to the logger
+                item.itemid, i, bool(item.freeforall), bool(item.is_looted), bool(item.is_blocked), bool(item.follow_loot_rules),
                 bool(item.rollWinnerGUID), item.GetAllowedLooters().size());
 
             if (item.freeforall || item.is_looted || item.follow_loot_rules || item.is_blocked || item.rollWinnerGUID)
