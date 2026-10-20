@@ -1,4 +1,7 @@
+Author: Tntdruid
 # mod-questparty
+
+Author: Tntdruid
 
 `mod-questparty` lets eligible party members loot their own quest items from the same game object.
 
